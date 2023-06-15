@@ -1,0 +1,13 @@
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+form div{
+    margin-top: 20px;
+    box-shadow: rgb(253, 249, 249);
+}
+.formulaire{
+    height: 90x;
+    box-shadow: black;
+}

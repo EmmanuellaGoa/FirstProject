@@ -1,0 +1,208 @@
+header{
+    position: fixed; /* pour fixer le hearder pour qu'il me suive où que jaille */
+    top: 0px;
+    left: 0px;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;      /*l'allignement de nos texte dans le header*/
+    justify-content: space-evenly;     /*pour les espaces entre nos éléments du header*/
+    align-items: center;        /*alignement au centre*/
+    transition: 0.5s;
+    background-image: url(image/Sans\ titre.png);
+}
+.logo{
+    color: black;
+    font-weight: bold;       /*logo en gras*/
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span{
+    color: fuchsia;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    font-size: 19px;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+#conect{
+    border: 1px solid coral;
+    padding: 2px 1px;
+    background-color: coral;
+    border-radius: 20px;
+    
+}
+#promo{
+    text-align: center;
+    background-color: coral;
+}
+.pub{
+    display: flex;
+                
+    width: 500px;
+    animation-duration: 20s;      /* cette partie concerne les img à faire defiler jusq L54*/
+    animation-name: mapub;
+    animation-iteration-count: infinite;
+}
+@keyframes mapub{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-500px);
+    }
+    40%{
+        transform: translateX(-1000px);
+    }
+    60%{
+        transform: translateX(-1500px);
+    }
+    80%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#n1 {
+    overflow: hidden;              /* pour que les images ne deborde pas au dela de notre page & hidden pr cacher la barre*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+img{
+    height: 450px; 
+    width: 450px;
+}
+.tex1{
+    white-space: nowrap;
+    font-size: 50px;          /* pour la taille du texte*/
+    animation: scrollTxt 15s linear infinite;
+    color: fuchsia;
+    background: none;
+}
+@keyframes scrollTxt{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+    }
+}
+/*.categorie img{
+    display:inline-block;
+    height: 250px;
+    width: 250px;
+    margin-left: 150px;
+    justify-content: space-between;
+}*/  
+.tex2{
+    text-align: center;
+    font-size: 30px;
+}
+#n2{
+    margin: 20px 30px 20px;
+   
+    
+}
+footer{
+    display: flex;
+    margin: 40px 50px;
+    justify-content: space-between;
+    background:url(image/texture-du-cuir.jpg) ;
+    
+}
+.lien a{
+    text-decoration: none;
+    color:brown
+}
+#menu{
+    position: relative;
+    font-size: 1.5em;
+}
+#log h2 span{
+    color:fuchsia;
+}
+/*Ici on regle la disposition des catégories d'images */
+.categorie #imge img {
+   
+    transition: 1s;
+    
+}
+.categorie #imge:hover img{
+    transform: scale(1.2);      /* permet de zoomer sur l'imge en survolant*/
+   
+}
+#n2 .categorie{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#n2 .categorie .box{
+    width: 300px;
+    margin: 35px;
+    box-shadow: 10px 10px 10px black;  /*box-shadow est pour faire la boîte et l'ombre */
+}
+#n2 .categorie .box #imge{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   
+}
+#n2 .categorie .box #tex{
+    text-align: center;
+    color: black;
+}
+#n2 .categorie .box #imge img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+#n3a{
+    border-radius: 4px ;
+    background-color: rgb(235, 138, 11);
+    padding: 15px;
+   
+    
+}
+#n3{
+    text-align: center;
+    margin-top: 15px;
+}
+.fleche{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.flch{
+    width: 48pxs;
+    height: 80px;
+}
